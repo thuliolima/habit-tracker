@@ -5,7 +5,9 @@ use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/about', [SiteController::class, 'index']);
+Route::get('/', [SiteController::class, 'index']);
+
+// Route::get('/', [SiteController::class, 'index']);
 
 
 
