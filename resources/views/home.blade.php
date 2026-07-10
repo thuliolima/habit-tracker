@@ -6,9 +6,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Teste</title>
+     @vite('resources/css/app.css')
+    <title>
+      {{ config('app.name') }}
+    </title>
 </head>
 <body>
+    <h1 class="text-3xl font-bold underline">
+        Pagina Inicial
+    </h1>
     Olá, {{$nome}} {{$sobrenome}}!
     <p>
     Esses são os seus habitos:
